@@ -102,10 +102,6 @@ h3.menu-title {
     color: #ACACAC;
 }
 
-.menu-item-expanded.orange .caption {
-    display: block;
-}
-
 .menu-item-expanded #splash-title {
 
     display: block;
@@ -113,15 +109,15 @@ h3.menu-title {
     margin-top: 50px;
 }
 
-.menu-item-expanded .menu-title {
+.menu-item-expanded .expanded-content {
+    display: block;
+}
+
+.menu-item-expanded .collapsed-content {
     display: none;
 }
 
 /* Splash page collapsed*/
-
-.menu-item.orange #splash-title {
-    display: none;
-}
 
 .menu-item.orange #mini-title {
     font-size:36px;
@@ -135,7 +131,10 @@ h3.menu-title {
     display: none;
 }
 
-.menu-item .menu-title {
+.menu-item .collapsed-content {
     display: block;
 }
 
+.menu-item .expanded-content {
+    display: none;
+}
