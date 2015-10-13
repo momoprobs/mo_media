@@ -1,0 +1,141 @@
+@font-face {
+    font-family: canter;
+    src: local(bttf_font), url('../fonts/canter_light.otf') format('opentype');
+}
+
+.container {
+    width: 1440px;
+}
+
+.orange {
+    color: #E8910C;
+    background-color: #E8910C;
+}
+
+.green {
+    color: #AEEE00;
+    background-color: #AEEE00;
+}
+
+.blue {
+    color: #01B0F0;
+    background-color: #01B0F0;
+}
+
+.pink {
+    color: #FF358B;
+    background-color: #FF358B;
+}
+
+.menu-item {
+    height:50px;
+}
+
+.menu-item > div {
+    height: inherit;
+
+}
+
+.menu-item-expanded {
+    background-color: #262626;
+    height: 574px;
+}
+
+.menu-title {
+    color: #262626;
+    font-family: 'Oswald', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    height: 50px; 
+}
+
+h3.menu-title {
+
+    padding-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;  
+}
+
+.menu-item h3.menu-title {
+    visibility: hidden;
+}
+
+.menu-item:hover h3.menu-title {
+    visibility: visible;
+    opacity: 1.0;
+}
+
+.menu-item:hover {
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+/* Splash page general */
+
+.orange h1 {
+
+    font-family: canter;
+    margin: 0px;
+    display: inline-block;
+}
+
+/* Splash page exanded */
+
+.menu-item-expanded.orange .big-title {
+    
+    font-size: 400px;   
+    height: 350px;  
+    visibility: visible; 
+}
+
+.menu-item-expanded.orange #mini-title {
+    display: none;
+}
+
+.menu-item-expanded.orange h2 {
+
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 300;
+
+    margin-top: 0px;
+    color: #ACACAC;
+}
+
+.menu-item-expanded.orange .caption {
+    display: block;
+}
+
+.menu-item-expanded #splash-title {
+
+    display: block;
+    height: 350px;
+    margin-top: 50px;
+}
+
+.menu-item-expanded .menu-title {
+    display: none;
+}
+
+/* Splash page collapsed*/
+
+.menu-item.orange #splash-title {
+    display: none;
+}
+
+.menu-item.orange #mini-title {
+    font-size:36px;
+    color: #262626;
+    margin-top: 15px;
+    margin-left: 10px;
+    display: block;
+}
+
+.menu-item.orange .caption {
+    display: none;
+}
+
+.menu-item .menu-title {
+    display: block;
+}
+
