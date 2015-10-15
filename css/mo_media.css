@@ -5,6 +5,8 @@
 
 .container {
     width: 1440px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 .orange {
@@ -28,7 +30,7 @@
 }
 
 .menu-item {
-    height:50px;
+    height:30px;
 }
 
 .menu-item > div {
@@ -38,15 +40,15 @@
 
 .menu-item-expanded {
     background-color: #262626;
-    height: 574px;
+    height: 634px;
 }
 
 .menu-title {
     color: #262626;
     font-family: 'Oswald', sans-serif;
-    font-size: 32px;
+    font-size: 18px;
     font-weight: 300;
-    height: 50px; 
+    height: 30px; 
 }
 
 h3.menu-title {
@@ -60,14 +62,33 @@ h3.menu-title {
     visibility: hidden;
 }
 
-.menu-item:hover h3.menu-title {
+.menu-item:hover h3.menu-title, .menu-item.hovered h3.menu-title {
     visibility: visible;
     opacity: 1.0;
 }
 
-.menu-item:hover {
+.menu-item:hover, .menu-item.hovered{
     opacity: 0.5;
     cursor: pointer;
+}
+
+/* General expanded */
+.menu-item-expanded .expanded-content {
+    display: block;
+}
+
+.menu-item-expanded .collapsed-content {
+    display: none;
+}
+
+
+/*General collapsed*/
+.menu-item .collapsed-content {
+    display: block;
+}
+
+.menu-item .expanded-content {
+    display: none;
 }
 
 /* Splash page general */
@@ -79,12 +100,12 @@ h3.menu-title {
     display: inline-block;
 }
 
-/* Splash page exanded */
 
+/* Splash page exanded */
 .menu-item-expanded.orange .big-title {
     
-    font-size: 400px;   
-    height: 350px;  
+    font-size: 430px;   
+    height: 370px;  
     visibility: visible; 
 }
 
@@ -105,36 +126,120 @@ h3.menu-title {
 .menu-item-expanded #splash-title {
 
     display: block;
-    height: 350px;
+    height: 370px;
     margin-top: 50px;
 }
 
-.menu-item-expanded .expanded-content {
-    display: block;
-}
-
-.menu-item-expanded .collapsed-content {
-    display: none;
-}
 
 /* Splash page collapsed*/
-
 .menu-item.orange #mini-title {
-    font-size:36px;
+    font-size: 24px;
     color: #262626;
+    margin-top: 0px;
+    margin-left: 20px;
+    padding-top: 4px;
+    display: block;
+}
+
+/*Projects expanded */
+
+.green-box {
+    border: 1px solid #AEEE00;
+    background-color: rgba(207, 207, 207, .2);
+}
+
+div.info-writing {
+    margin-top: 10px;
+    color: white;
+    height: 337px;
+    padding: 15px 15px;
+}
+
+.carousel.project-images {
+    height: 370px;
+}
+
+.carousel.project-images img {
+    margin: 25px auto;
+    height: 310px;
+    box-shadow: 0px 5px 5px black;
+}
+
+.carousel-control {
+    width: 10%;
+}
+
+.carousel-indicators {
+    margin-bottom: 5px;
+    bottom: 0px;
+}
+
+.carousel.project-picker {
+    margin-bottom: 0px;
+    padding: 0px;
+    height: 118px;
+}
+
+.project-filter {
+
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project-picker div.carousel-inner {
+    height : 118px;
+}
+
+.carousel.project-picker .item {
+    height: 118px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+h1.project-title,  h2.project-subtitle {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 10px;
+    margin-bottom: 0px;
+}
+
+a.thumbnail, div.empty-thumbnail {
+    height: 75px;
+    width: 100px;
     margin-top: 15px;
-    margin-left: 10px;
-    display: block;
 }
 
-.menu-item.orange .caption {
-    display: none;
+a.thumbnail {
+    box-shadow: 0px 3px 3px black;
 }
 
-.menu-item .collapsed-content {
-    display: block;
+div.empty-thumbnail {
+   background-color: rgba(207, 207, 207, .2); 
 }
 
-.menu-item .expanded-content {
-    display: none;
+.nav {
+    border-bottom: none;
 }
+
+.nav-tabs > li {
+    margin-right: 5px;
+    border-bottom: 1px solid white;
+}
+
+.nav-tabs > li  > a {
+    border-radius: 0px;
+    color: white;
+    padding: 0px 15px;
+    margin-right: 0px;
+}
+
+.nav-tabs > li.active {
+    border-bottom: 4px solid #AEEE00;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #AEEE00;
+    background-color: transparent;
+    border: none;
+}
+
